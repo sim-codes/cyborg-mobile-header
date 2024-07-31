@@ -121,7 +121,7 @@ export default function Page() {
                     <div className="my-2 md:my-10 flex flex-col md:flex-row items-center justify-center gap-5">
                         <Image src={thumbnail} alt="audio icon" />
                         <div className="text-left space-y-2 md:space-y-5 text-md md:text-xl">
-                            <h3 className='text-md md:text-2xl font-bold'>{fileInfo.name}</h3>
+                            <h3 className='text-md md:text-2xl font-bold'>{truncateFileName(fileInfo.name)}</h3>
                             <div className="flex md:block justify-between items-start space-y-2 md:space-y-5">
                                 <p>Author<span className='block font-bold'>Adi Purdila</span></p>
                                 <p>Audio Length<span className='block font-bold'>03 mins 40 secs</span></p>
